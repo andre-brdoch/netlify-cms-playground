@@ -1,3 +1,9 @@
+import fs from "fs";
+import { join } from "path";
+
+const HTTPS_KEY = join(__dirname, "credentials/ca.key");
+const HTTPS_CERT = join(__dirname, "credentials/ca.cert");
+
 export default {
   target: "static",
 
@@ -13,5 +19,15 @@ export default {
 
   components: true,
 
-  buildModules: ["@nuxtjs/tailwindcss"]
+  buildModules: ["@nuxtjs/tailwindcss"],
+
+  server: {
+    https:
+      process.env.NODE_ENV === "development"
+        ? {
+            key: fs.readFileSync(HTTPS_KEY, "ascii"),
+            cert: fs.readFileSync(HTTPS_CERT, "ascii")
+          }
+        : null
+  }
 };
