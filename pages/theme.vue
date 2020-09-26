@@ -8,12 +8,7 @@
         </h2>
         <ul>
           <li v-for="value in color.values" :key="value">
-            <div class="pt-1/4 relative" :style="`background-color: ${value};`">
-              <div
-                class="absolute flex h-full inset-0 items-center justify-center w-full">
-                {{ value }}
-              </div>
-            </div>
+            <ColorBox :value="value" />
           </li>
         </ul>
       </div>
@@ -22,9 +17,12 @@
 </template>
 
 <script>
+import { ColorBox } from '@/components/ColorBox';
 import tailwindConfig from '@/tailwind.config.js';
 
 export default {
+  components: { ColorBox },
+
   asyncData() {
     const { colors: colorsObj } = tailwindConfig.theme.extend;
     // transform to array
