@@ -4,7 +4,7 @@
     :style="`background-color: ${value}; color: ${complementary};`">
     <div
       ref="text"
-      class="absolute cursor-pointer flex font-bold h-full inset-0 items-center justify-center w-full"
+      class="absolute cursor-pointer flex font-bold font-standard h-full inset-0 items-center justify-center w-full"
       @click="copy">
       {{ !copyInfoActive ? value : 'copied ✓' }}
     </div>

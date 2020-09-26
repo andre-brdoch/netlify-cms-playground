@@ -1,14 +1,32 @@
 <template>
-  <div class="container">
-    <h1>Theme</h1>
-    <div class="gap-10 grid" :class="`grid-cols-${colors.length}`">
-      <div v-for="color in colors" :key="color.label">
-        <h2>
-          {{ color.label }}
-        </h2>
-        <ColorList :colors="color.values" />
+  <div>
+    <header class="py-24">
+      <div class="container">
+        <div class="max-w-lg">
+          <h1
+            class="font-bold font-standard leading-tight mb-2 text-6xl text-neutral-800">
+            Website Theme
+          </h1>
+          <p class="font-standard text-lg text-neutral-800">
+            This Website was created using
+            <a href="https://tailwindcss.com" target="_blank" rel="noopener"><b>Tailwind CSS</b></a>.
+          </p>
+        </div>
       </div>
-    </div>
+    </header>
+    <section>
+      <div class="container">
+        <ul class="gap-10 grid" :class="`grid-cols-${colors.length}`">
+          <li v-for="color in colors" :key="color.label">
+            <h2
+              class="font-bold font-standard mb-4 text-center text-neutral-800 text-xl">
+              {{ color.label }}
+            </h2>
+            <ColorList :colors="color.values" />
+          </li>
+        </ul>
+      </div>
+    </section>
   </div>
 </template>
 

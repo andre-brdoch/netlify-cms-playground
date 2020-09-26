@@ -1,8 +1,8 @@
 module.exports = {
-  purge: [],
   theme: {
     extend: {
       colors: {
+        // generated with https://colors.eva.design/
         primary: {
           '100': '#FEF3CE',
           '200': '#FDE39E',
@@ -88,9 +88,13 @@ module.exports = {
           'transparent-500': 'rgba(255, 67, 38, 0.4)',
           'transparent-600': 'rgba(255, 67, 38, 0.48)',
         },
+        neutral: {
+          '400': '#EEEBD0',
+          '500': '#C2C0AC',
+          '800': '#34403A',
+        },
       },
       fontFamily: { standard: [ 'Rubik', 'sans-serif' ] },
-      container: { center: true },
       spacing: {
         '1/2': '50%',
         '1/3': '33.33%',
@@ -98,8 +102,7 @@ module.exports = {
         '1/4': '24%',
         '1/5': '20%',
       },
+      container: { center: true },
     },
   },
-  variants: {},
-  plugins: [],
 };
