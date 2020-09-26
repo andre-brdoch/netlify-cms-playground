@@ -11,7 +11,7 @@
       <div class="flex flex-col flex-grow justify-between p-3">
         <div>
           <h3 class="font-bold text-lg text-neutral-800">
-            {{ label }}
+            {{ label }}!
           </h3>
           <p class="mt-2 text-neutral-800 text-sm tracking-tight">
             {{ text }}
