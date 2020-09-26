@@ -2,8 +2,8 @@
   <div>
     <header class="py-20">
       <div class="container">
-        <div class="mx-auto text-center w-1/2">
-          <h1 class="font-bold leading-tight mb-4 text-6xl">
+        <div class="md:px-0 md:w-1/2 mx-auto px-5 text-center">
+          <h1 class="font-bold leading-tight mb-4 md:text-6xl text-4xl">
             Website Theme
           </h1>
           <p class="mb-3">
@@ -33,12 +33,12 @@
     </section>
     <section class="py-6">
       <div class="container">
-        <h2 class="mb-4 text-3xl">
+        <h2 class="mb-4 md:px-0 md:text-3xl px-5 text-2xl">
           tailwind.config.js
         </h2>
         <!-- eslint-disable vue/no-v-html -->
         <code
-          class="block leading-5 lg:text-base md:text-sm overflow-x-scroll p-4 rounded-sm text-xs whitespace-no-wrap"
+          class="block leading-5 lg:text-base md:overflow-x-auto md:p-4 md:text-sm overflow-x-scroll p-2 rounded-sm text-xs whitespace-no-wrap"
           v-html="tailwindConfigJson" />
         <!-- eslint-enable vue/no-v-html -->
       </div>

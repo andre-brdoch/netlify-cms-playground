@@ -1,6 +1,6 @@
 <template>
   <ul>
-    <li v-for="color in colors" :key="color.value">
+    <li v-for="color in colors" :key="color.value" class="block">
       <ColorBox :value="color.value" :complementary="color.complementary" />
     </li>
   </ul>
