@@ -110,7 +110,12 @@ module.exports = {
   },
   plugins: [
     plugin(function setBaseStyles({ addBase, config }) {
-      addBase({ a: { color: config('theme.colors.danger.700') } });
+      addBase({
+        a: {
+          color: config('theme.colors.danger.700'),
+          fontWeight: config('theme.fontWeight.bold'),
+        },
+      });
       addBase({ code: { backgroundColor: config('theme.colors.neutral.400') } });
     }),
   ],

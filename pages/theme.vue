@@ -2,13 +2,13 @@
   <div>
     <header class="py-20">
       <div class="container">
-        <div class="md:px-0 md:w-1/2 mx-auto px-5 text-center">
+        <div class="md:px-0 md:w-2/3 mx-auto px-5 text-center">
           <h1 class="font-bold leading-tight mb-4 md:text-6xl text-4xl">
             Website Theme
           </h1>
           <p class="mb-3">
             This Website was created using
-            <a href="https://tailwindcss.com" target="_blank" rel="noopener"><b>Tailwind CSS</b></a>.
+            <a href="https://tailwindcss.com" target="_blank" rel="noopener">Tailwind CSS</a>.
           </p>
           <p>
             It was my first time using Tailwind. Here you can find the theme and
@@ -29,6 +29,10 @@
             <ColorList :colors="color.values" />
           </li>
         </ul>
+        <p class="md:px-0 mt-4 px-5">
+          The color palette was generated with
+          <a href="https://colors.eva.design" target="_blank" rel="noopener">Eva's Design System</a>.
+        </p>
       </div>
     </section>
     <section class="py-6">
