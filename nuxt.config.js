@@ -19,7 +19,16 @@ export default {
 
   components: true,
 
-  buildModules: [ '@nuxtjs/tailwindcss' ],
+  buildModules: [
+    '@nuxtjs/tailwindcss',
+    [
+      '@nuxtjs/google-fonts',
+      {
+        families: { Rubik: [ 400, 600 ] },
+        display: 'swap',
+      },
+    ],
+  ],
 
   server: {
     https:
