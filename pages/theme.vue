@@ -2,14 +2,17 @@
   <div>
     <header class="py-24">
       <div class="container">
-        <div class="max-w-lg">
-          <h1
-            class="font-bold font-standard leading-tight mb-2 text-6xl text-neutral-800">
+        <div class="w-1/2">
+          <h1 class="font-bold leading-tight mb-4 text-6xl">
             Website Theme
           </h1>
-          <p class="font-standard text-lg text-neutral-800">
+          <p class="mb-3">
             This Website was created using
             <a href="https://tailwindcss.com" target="_blank" rel="noopener"><b>Tailwind CSS</b></a>.
+          </p>
+          <p>
+            It was my first time using Tailwind. Here you can find the theme and
+            <code>tailwind.config.js</code> I was using.
           </p>
         </div>
       </div>
@@ -18,8 +21,7 @@
       <div class="container">
         <ul class="gap-10 grid" :class="`grid-cols-${colors.length}`">
           <li v-for="color in colors" :key="color.label">
-            <h2
-              class="font-bold font-standard mb-4 text-center text-neutral-800 text-xl">
+            <h2 class="font-bold mb-4 text-center text-xl">
               {{ color.label }}
             </h2>
             <ColorList :colors="color.values" />

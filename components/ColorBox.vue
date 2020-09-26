@@ -2,12 +2,12 @@
   <div
     class="pt-1/4 relative"
     :style="`background-color: ${value}; color: ${complementary};`">
-    <div
+    <p
       ref="text"
-      class="absolute cursor-pointer flex font-bold font-standard h-full inset-0 items-center justify-center w-full"
+      class="absolute cursor-pointer flex font-bold font-standard h-full inset-0 items-center justify-center text-sm w-full"
       @click="copy">
       {{ !copyInfoActive ? value : 'copied ✓' }}
-    </div>
+    </p>
   </div>
 </template>
 

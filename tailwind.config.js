@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin');
+
 module.exports = {
   theme: {
     extend: {
@@ -105,4 +107,10 @@ module.exports = {
       container: { center: true },
     },
   },
+  plugins: [
+    plugin(function setBaseStyles({ addBase, config }) {
+      addBase({ a: { color: config('theme.colors.danger.700') } });
+      addBase({ code: { backgroundColor: config('theme.colors.neutral.400') } });
+    }),
+  ],
 };
