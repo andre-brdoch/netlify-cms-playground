@@ -3,7 +3,7 @@
     <header>
       <div class="container md:px-0 px-5">
         <h1 class="font-bold leading-tight mb-4 md:text-6xl text-4xl">
-          netlify-cms-playground
+          Tailwind CSS Test
         </h1>
       </div>
     </header>
