@@ -1,0 +1,19 @@
+backend:
+  name: git-gateway
+  branch: cms
+publish_mode: editorial_workflow
+media_folder: 'static/images/cms'
+public_folder: '/images/cms'
+collections:
+  - name: 'blog' # Used in routes, e.g., /admin/collections/blog
+    label: 'Blog' # Used in the UI
+    folder: 'content/blog' # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog' }
+      - { label: 'Label', name: 'label', widget: 'string' }
+      - { label: 'Summary', name: 'text', widget: 'string' }
+      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - { label: 'Featured Image', name: 'img', widget: 'image' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
