@@ -25,8 +25,10 @@ export default {
     https:
       process.env.NODE_ENV === 'development' ?
         {
+          /* eslint-disable no-sync */
           key: fs.readFileSync(HTTPS_KEY, 'ascii'),
           cert: fs.readFileSync(HTTPS_CERT, 'ascii'),
+          /* eslint-enable no-sync */
         } :
         null,
   },

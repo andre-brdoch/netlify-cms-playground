@@ -10,16 +10,14 @@
           href="https://nuxtjs.org/"
           target="_blank"
           rel="noopener noreferrer"
-          class="button--green"
-        >
+          class="button--green">
           Documentation
         </a>
         <a
           href="https://github.com/nuxt/nuxt.js"
           target="_blank"
           rel="noopener noreferrer"
-          class="button--grey"
-        >
+          class="button--grey">
           GitHub
         </a>
       </div>
@@ -28,7 +26,7 @@
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
 
 <style>
