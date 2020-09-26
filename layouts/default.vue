@@ -1,7 +1,9 @@
 <template>
-  <div>
+  <div class="flex flex-col min-h-screen">
     <TheNav :link-items="linkItems" />
-    <Nuxt />
+    <div class="flex-grow">
+      <Nuxt />
+    </div>
     <TheFooter />
   </div>
 </template>
@@ -18,7 +20,7 @@ export default {
       linkItems: [
         { label: 'Link 1', href: '/' },
         { label: 'Link 2', href: '/' },
-        { label: 'Link 3', href: '/' },
+        { label: 'Theme', href: '/theme' },
       ],
     };
   },
