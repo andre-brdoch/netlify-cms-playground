@@ -6,22 +6,18 @@
         <h2>
           {{ color.label }}
         </h2>
-        <ul>
-          <li v-for="value in color.values" :key="value">
-            <ColorBox :value="value" />
-          </li>
-        </ul>
+        <ColorList :colors="color.values" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { ColorBox } from '@/components/ColorBox';
+import ColorList from '@/components/ColorList';
 import tailwindConfig from '@/tailwind.config.js';
 
 export default {
-  components: { ColorBox },
+  components: { ColorList },
 
   asyncData() {
     const { colors: colorsObj } = tailwindConfig.theme.extend;

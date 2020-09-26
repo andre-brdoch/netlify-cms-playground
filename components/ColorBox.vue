@@ -13,7 +13,7 @@ export default {
     value: {
       type: String,
       required: true,
-      validator: val => val.startsWith('#') && val.length <= 6,
+      validator: val => typeof val === 'string' && val.startsWith('#') && val.length <= 7,
     },
   },
 };
