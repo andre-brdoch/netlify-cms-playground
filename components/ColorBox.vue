@@ -1,6 +1,6 @@
 <template>
   <div
-    class="pt-1/4 relative"
+    class="lg:pt-1/3 pt-1/5 relative"
     :style="`background-color: ${value}; color: ${complementary};`">
     <p
       ref="text"

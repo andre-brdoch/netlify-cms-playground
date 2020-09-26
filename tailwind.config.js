@@ -98,9 +98,9 @@ module.exports = {
       },
       fontFamily: { standard: [ 'Rubik', 'sans-serif' ] },
       spacing: {
+        '2/3': '66.66%',
         '1/2': '50%',
         '1/3': '33.33%',
-        '2/3': '66.66%',
         '1/4': '24%',
         '1/5': '20%',
       },
