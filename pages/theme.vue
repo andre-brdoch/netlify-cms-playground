@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h1>Theme</h1>
-    <div class="gap-4 grid" :class="`grid-cols-${colors.length}`">
+    <div class="gap-10 grid" :class="`grid-cols-${colors.length}`">
       <div v-for="color in colors" :key="color.label">
         <h2>
           {{ color.label }}
