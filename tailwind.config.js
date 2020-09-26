@@ -105,6 +105,7 @@ module.exports = {
         '1/5': '20%',
       },
       container: { center: true },
+      screens: { xl: null },
     },
   },
   plugins: [
