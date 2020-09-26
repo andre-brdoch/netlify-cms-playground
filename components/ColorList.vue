@@ -1,7 +1,7 @@
 <template>
   <ul>
-    <li v-for="value in colors" :key="value">
-      <ColorBox :value="value" />
+    <li v-for="color in colors" :key="color.value">
+      <ColorBox :value="color.value" :complementary="color.complementary" />
     </li>
   </ul>
 </template>

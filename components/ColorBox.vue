@@ -1,10 +1,12 @@
 <template>
-  <div class="pt-1/4 relative" :style="`background-color: ${value};`">
+  <div
+    class="pt-1/4 relative"
+    :style="`background-color: ${value}; color: ${complementary};`">
     <div
       ref="text"
-      class="absolute cursor-pointer flex h-full inset-0 items-center justify-center w-full"
+      class="absolute cursor-pointer flex font-bold h-full inset-0 items-center justify-center w-full"
       @click="copy">
-      {{ !copyInfoActive ? value : 'copied' }}
+      {{ !copyInfoActive ? value : 'copied ✓' }}
     </div>
   </div>
 </template>
@@ -15,7 +17,10 @@ export default {
     value: {
       type: String,
       required: true,
-      validator: val => typeof val === 'string' && val.startsWith('#') && val.length <= 7,
+    },
+    complementary: {
+      type: String,
+      required: true,
     },
   },
 
